@@ -43,7 +43,7 @@ public class Main {
 		    if (!isFirstWord) {
 		    	//word checking
 		    	// return 0 if correct and on last subword, otherwise return other number
-		    	if ((currentWordInput.indexOf(lastSubWord) + lastSubWord.length() - 1)!=0) {
+		    	if (((currentWordInput.indexOf(lastSubWord) + lastSubWord.length() - 1)-1)!=0) {
 		    		System.out.println("Kata tidak sesuai, anda kalah~~~");
 		    		isAnswerCorrect = false;
 		    		break;
@@ -68,9 +68,9 @@ public class Main {
 		    	System.out.println("|| Current Char: " + currentWordInput.charAt(i));
 		    	
 		    	isCharVowel = (Arrays.asList(vowelLetters).contains(String.valueOf(currentWordInput.charAt(i))));
-		    	System.out.println(String.valueOf(isCharVowel));
+		    	//System.out.println(String.valueOf(isCharVowel));
 		    	if (vowelFound && (!isCharVowel)) {
-		    		System.out.println("|| Here");
+		    		//System.out.println("|| Here");
 
 		    		startWordPos = i;
 		    		break;
@@ -79,7 +79,7 @@ public class Main {
 		    		vowelFound = true;
 		    	}
 		    }
-		    System.out.println(String.valueOf(startWordPos) + ";" + String.valueOf(currentWordInput.length()-1));
+		    //System.out.println(String.valueOf(startWordPos) + ";" + String.valueOf(currentWordInput.length()-1));
     		lastSubWord = currentWordInput.substring(startWordPos,currentWordInput.length());
 		    System.out.println("sambungan katanya yaitu: " + lastSubWord);
 
