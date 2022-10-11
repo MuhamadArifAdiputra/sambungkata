@@ -27,6 +27,7 @@ public class Main {
 			String[] vowelLetters = {"a", "i", "u", "e", "o"};
 			String lastSubWord = "";
 			String userHelperWord;
+			int wordContinuityCheckPos = 0;
 				
 			while (isAnswerCorrect) {
 				// Get user input for the word
@@ -44,7 +45,11 @@ public class Main {
 			    if (!isFirstWord) {
 			    	//word checking
 			    	// return 0 if correct and on last subword, otherwise return other number
-			    	if (((currentWordInput.indexOf(lastSubWord) + lastSubWord.length() - 1)-1)!=0) {
+			    	
+			    	wordContinuityCheckPos = (((currentWordInput.indexOf(lastSubWord))));
+				    System.out.println("wordContinuityCheckPos: " + wordContinuityCheckPos);
+
+			    	if (wordContinuityCheckPos!=0) {
 			    		System.out.println("Kata tidak sesuai, anda kalah~~~");
 			    		isAnswerCorrect = false;
 			    		break;
