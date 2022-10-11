@@ -18,7 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Silakan coba jalankan program ini terlebih dahulu untuk memastikan sudah bisa run dengan baik ya
-		System.out.println("Sambung Kata Level 1");
+		System.out.println("Sambung Kata Level 2");
 		
 		boolean stillWantToPlay = true;
 		while (stillWantToPlay) {
@@ -26,17 +26,28 @@ public class Main {
 			boolean isFirstWord = true;
 			String[] vowelLetters = {"a", "i", "u", "e", "o"};
 			String lastSubWord = "";
-			String userHelperWord;
+			String userHelperWord = "";
 			int wordContinuityCheckPos = 0;
+			
+			int player1Score = 0;
+			int player2Score = 0;
+			int currentPlayer = 1;
 				
 			while (isAnswerCorrect) {
 				// Get user input for the word
 			    Scanner rawInput = new Scanner(System.in);  // Create a Scanner object
+			    if (currentPlayer==1) {
+			    	userHelperWord = "Player 1, ";
+			    }
+			    else if (currentPlayer==2){
+			    	userHelperWord = "Player 2, ";
+			    }
+			    
 			    if (isFirstWord) {
-			    	userHelperWord = "Masukan kata pertama: ";
+			    	userHelperWord = userHelperWord + "Masukan kata pertama: ";
 			    }
 			    else {
-			    	userHelperWord = "Masukan kata sambungan: ";
+			    	userHelperWord = userHelperWord + "Masukan kata sambungan: ";
 			    }
 			    System.out.print(userHelperWord);
 			    String currentWordInput = rawInput.nextLine();  // Read user input
@@ -47,10 +58,11 @@ public class Main {
 			    	// return 0 if correct and on last subword, otherwise return other number
 			    	
 			    	wordContinuityCheckPos = (((currentWordInput.indexOf(lastSubWord))));
-				    System.out.println("wordContinuityCheckPos: " + wordContinuityCheckPos);
+				    //System.out.println("wordContinuityCheckPos: " + wordContinuityCheckPos);
 
 			    	if (wordContinuityCheckPos!=0) {
-			    		System.out.println("Kata tidak sesuai, anda kalah~~~");
+			    		System.out.println("Kata tidak sesuai, permainan berakhir~~~");
+					    System.out.println("");
 			    		isAnswerCorrect = false;
 			    		break;
 			    	}
@@ -60,6 +72,16 @@ public class Main {
 			    //first word
 			    {
 			    	isFirstWord = false;
+			    }
+			    
+			    //score based by length of the word
+			    if (currentPlayer==1) {
+			    	player1Score = player1Score + currentWordInput.length();
+			    	currentPlayer = 2;
+			    }
+			    else if (currentPlayer==2){
+			    	player2Score = player2Score + currentWordInput.length();
+			    	currentPlayer = 1;
 			    }
 			    
 			    //get last subWord (note: subword is a section of word that begin with consonant and have vowel next to it)
@@ -88,12 +110,33 @@ public class Main {
 			    //System.out.println(String.valueOf(startWordPos) + ";" + String.valueOf(currentWordInput.length()-1));
 	    		lastSubWord = currentWordInput.substring(startWordPos,currentWordInput.length());
 			    System.out.println("sambungan katanya yaitu: " + lastSubWord);
+			    System.out.println("");
 	
 			}
+			
+			
+			//Display Scoring and who wins
+			String winnerMessage = "Selamat, pemain ";
+			if (player1Score>player2Score) {
+				winnerMessage = "Selamat, pemain 1 menang!";
+			}
+			else if (player1Score<player2Score) {
+				winnerMessage = "Selamat, pemain 2 menang!";
+			}
+			else {
+				winnerMessage = "Skor seri!";
+			}
+			
+		    System.out.println(winnerMessage);
+		    System.out.println("Skor akhir");
+		    System.out.println("Pemain 1: " + player1Score);
+		    System.out.println("Pemain 2: " + player2Score);
+
 		
 		
 			// Get user input for replay
 		    Scanner rawInput = new Scanner(System.in);  // Create a Scanner object
+		    System.out.println("");
 		    System.out.print("Masih mau main? (Y/N) : ");
 		    String userInput = rawInput.nextLine();  // Read user input
 		    
