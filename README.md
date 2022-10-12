@@ -4,7 +4,7 @@
  
  Sebelumnya isi bagian ini dahulu ya:
  
- Nama Lengkap: 
+ Nama Lengkap: `isi nama lengkap disini ya`
 
  
  Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
