@@ -1,14 +1,12 @@
 # Permainan Sambung Kata
 
- Hi rekan DevCamp Academy 2022!
- 
- Sebelumnya isi bagian ini dahulu ya:
- 
- Nama Lengkap: `isi nama lengkap disini ya`
+Hi rekan DevCamp Academy 2022!
 
- 
- Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
+Sebelumnya isi bagian ini dahulu ya:
 
+Nama Lengkap: `isi nama lengkap disini ya`
+
+Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
 
 Langsung to the point saja. Inti dari repo ini adalah permainan sambung kata. Kalau permainan yang semisal dengan ini adalah shiritori di jepang namun dalam sambung kata ini supaya memudahkan teman-teman ada beberapa aturan:
 
@@ -20,11 +18,7 @@ Langsung to the point saja. Inti dari repo ini adalah permainan sambung kata. Ka
   
   Kami mengerti ini bukan penggalan kata yang tepat, namun jika menggunakan penggalan kata yang tepat akan cukup menyulitkan pembuatan algoritmanya. Dipersilakan jika ingin mencoba bagi peserta devcamp untuk membuat pemenggalan kata yang benar nya juga jika ingin ya.
 
-
-
 Jika kalian baru pertama kali menggunakan eclipse, disarankan agar clone repositori ini ke lokal kalian dan run program nya terlebih dahulu sebelum lanjut mencoba membuat program ini.
-
-
 
 Disini kita bagi menjadi beberapa "level" supaya memudahkan:
 
@@ -48,8 +42,6 @@ level 2 ditambahkan beberapa tambahan:
 
 - level 2.2 dimana kalian tentukan pemenang dari skor yang ada di akhir.
 
-
-
 ---
 
 Kami hanya akan memberikan sampai level 2.2 saja. Namun jika kalian ada waktu luang atau sudah cukup mahir disarankan silakan lanjut eksplorasi dengan:
@@ -64,11 +56,7 @@ Kami hanya akan memberikan sampai level 2.2 saja. Namun jika kalian ada waktu lu
 
 - tambahkan timeout untuk pemain agar dilewati jika dia sudah terlalu lama berpikir supaya skornya bisa lebih besar untuk pemain yang gesit
 
-
-
 2 orang dengan eksplorasi paling dalam/unik/bagus dalam permainan sambungkata ini akan mendapatkan hadiah di akhir sesi ini jadi silakan bereksplorasi.
-
-
 
 ---
 
