@@ -26,14 +26,23 @@ public class Main {
         BufferedReader br = new BufferedReader(isr);
 
         System.out.println("~~~ WELCOME TO SAMBUNG KATA GAME ~~~");
-        String firstWord = "toko";
-        String secondWord = "Komodo";
 
-        System.out.println("Kata pertama: " + firstWord);
+        System.out.println("Masukkan kata pertama: ");
+        String firstWord = br.readLine();
+        String secondWord = "";
+
+        
         
         while (!secondWord.equals("STOP")) {
+            System.out.println("Kata selanjutnya lanjutan dari '" + firstWord + "':");
             secondWord = br.readLine();
-            System.out.println(firstWord + " " + secondWord +", hasilnya adalah: " + sambungKata(firstWord, secondWord)); 
+
+            if (sambungKata(firstWord, secondWord)) {
+                System.out.println("~ JAWABAN BENAR"); 
+            } else {
+                System.out.println("~ JAWABAN SALAH"); 
+            }
+            
             firstWord = secondWord;
         }
 
