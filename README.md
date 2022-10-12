@@ -10,9 +10,7 @@
  
 
 
-Langsung to the point saja: 
-
-Inti dari repo ini adalah permainan sambung kata. Kalau permainan yang semisal dengan ini adalah shiritori di jepang namun dalam sambung kata ini supaya memudahkan teman-teman ada beberapa aturan:
+Langsung to the point saja. Inti dari repo ini adalah permainan sambung kata. Kalau permainan yang semisal dengan ini adalah shiritori di jepang namun dalam sambung kata ini supaya memudahkan teman-teman ada beberapa aturan:
 
 - sambung kata dalam hal ini adalah hurun konsonan paling akhir yang sebelumnya ada huruf vokal. Misal:
   
