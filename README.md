@@ -7,7 +7,7 @@
  Nama Lengkap: 
 
  
- Juga silakan buat branch sendiri ya yaitu branch dengan nama devcamp_<namalengkap> ya. Kalian boleh membuat branch tambahan sendiri dengan format devcamp_<namalengkap>_<tambahaninfo> ya.
+ Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
 
 
 Langsung to the point saja. Inti dari repo ini adalah permainan sambung kata. Kalau permainan yang semisal dengan ini adalah shiritori di jepang namun dalam sambung kata ini supaya memudahkan teman-teman ada beberapa aturan:
