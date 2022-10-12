@@ -1,6 +1,6 @@
 # Permainan Sambung Kata
 
- Hi rekan DevCamp Academy 2022!
+ Hi rekan DevCamp Academy 2022!!
  
  Sebelumnya isi bagian ini dahulu ya:
  
