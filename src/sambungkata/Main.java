@@ -9,17 +9,25 @@ package sambungkata;
  */
 
 import java.util.Scanner;
+import java.net.*;
+import java.io.*;
 
 public class Main {
 
 	/**
 	 * @param args
 	 */
+	
+	private static HttpURLConnection connection;
+	
     Scanner sc = new Scanner(System.in);
 
     int scorep1 = 0;
     int scorep2 = 0;
     int turn = 1;
+	int seconds = 10;
+    
+    
     public Main(){
         menu();
     }
@@ -91,11 +99,12 @@ public class Main {
         }
         return 1;
     }
-
+    
     public void game(){
         String prevWord = "";
         while(true){
             cls();
+            seconds = 10;
             String wordToUse2 = wordToUse(prevWord);
             System.out.println("Player 1 score: " + scorep1);
             System.out.println("Player 2 score: " + scorep2);
@@ -111,6 +120,9 @@ public class Main {
             }
 
             String ans = sc.nextLine();
+            if (ans == "" || ans.length() == 1) {
+            	winner();
+            }
 
             prevWord = ans;
             int flag = check(ans, wordToUse2);
