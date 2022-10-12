@@ -4,7 +4,7 @@
  
  Sebelumnya isi bagian ini dahulu ya:
  
- Nama Lengkap: `isi nama lengkap disini ya`
+ Nama Lengkap: Gita Permatasari Sujatmiko
 
  
  Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
