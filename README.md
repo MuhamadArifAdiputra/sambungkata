@@ -5,6 +5,9 @@
  Sebelumnya isi bagian ini dahulu ya:
  
  Nama Lengkap: 
+ 
+ 
+ 
 
 
 Langsung to the point saja: 
