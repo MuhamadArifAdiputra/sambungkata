@@ -4,7 +4,7 @@
  
  Sebelumnya isi bagian ini dahulu ya:
  
- Nama Lengkap: `Fikri`
+ Nama Lengkap: `Fikri Yusrihan`
 
  
  Juga silakan buat branch sendiri ya yaitu branch dengan nama `devcamp_<namalengkap>` ya. Kalian boleh membuat branch tambahan sendiri dengan format `devcamp_<namalengkap>_<tambahaninfo>` ya.
